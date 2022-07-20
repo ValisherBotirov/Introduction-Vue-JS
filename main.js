@@ -2,7 +2,13 @@ console.log("hello world");
 console.log(Vue);
 
 const app = Vue.createApp({
-  template : `<h1>Hello Vue JS</h1>`
+  data(){
+    return {
+      name : "Valisher",
+      age : 20,
+      email : "valisherbotirov1218@gmail.com"
+    }
+  }
 })
 
 app.mount("#app")
