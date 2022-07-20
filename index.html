@@ -19,6 +19,17 @@
         <button @click="changeAge(10)">age++</button>
         <button @click="changeName">changeName</button>
 
+        <div>
+          <p v-if = "toggle">
+            {{text}}
+          </p>
+        </div>
+
+        <button @click = "toogleText">
+          <span v-if = toggle>Hide Text</span>
+          <span v-if = !toggle>Show Text</span>
+        </button>
+
       </div>
     <script src = "./main.js">
     </script>
