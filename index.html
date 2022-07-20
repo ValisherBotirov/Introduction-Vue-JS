@@ -12,8 +12,14 @@
         <h1>{{name}}</h1>
         <h2>{{age}}</h2>
         <h2>{{email}}</h2>
-      </div>
 
+        <!-- <button v-on:click = "age++">Age++</button>
+        <button @click = "age--">Age--</button> -->
+
+        <button @click="changeAge(10)">age++</button>
+        <button @click="changeName">changeName</button>
+
+      </div>
     <script src = "./main.js">
     </script>
     </body>
