@@ -31,6 +31,8 @@
           <span v-if = !toggle>Show Text</span>
         </button>
 
+        <!-- Mouse eventla -->
+
         <h2 class = "center--text">New Events</h3>
           <div class = "flex-group">
             <div class = "box" @mouseover = "mouseEnter">
@@ -47,7 +49,15 @@
             </div>
           </div>
          
+          <!-- For loopi -->
 
+          <h3 class = "center--text">For loopi</h3>
+          <ul>
+            <li v-for = "user in users">
+              {{user.name}}  {{user.job}}
+            </li>
+           
+          </ul>
 
       </div>
     <script src = "./main.js">

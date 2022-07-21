@@ -12,6 +12,12 @@ const app = Vue.createApp({
       toggle : true,
       x : 0,
       y : 0,
+
+      users : [
+        {name : "Valisher",job : "FullStack Developer"},
+        {name : "Doniyor" , job : "Java Backend Developer"},
+        {name : "Aziz" , job : "Node JS Backend Developer"}
+      ]
     }
   },
 
