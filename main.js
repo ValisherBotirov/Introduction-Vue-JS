@@ -18,10 +18,9 @@ const app = Vue.createApp({
         {name : "Doniyor" , job : "Java Backend Developer"},
         {name : "Aziz" , job : "Node JS Backend Developer"}
       ],
-
       todoList : [],
-
       inputValues : "",
+      link : "https://kun.uz",
     }
   },
 
