@@ -71,6 +71,14 @@
            <a v-bind:href="link">Kun.uz</a>
           </form>
 
+          <!-- Dynamic class qoshish -->
+
+          <ul>
+            <li v-for= "user in  users" class = "dynamic--class" :class = "{newClass:!user.isRes}">
+              {{user.isRes}}
+            </li>
+          </ul>
+
       </div>
     <script src = "./main.js">
     </script>

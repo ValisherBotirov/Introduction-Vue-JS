@@ -14,9 +14,9 @@ const app = Vue.createApp({
       y : 0,
 
       users : [
-        {name : "Valisher",job : "FullStack Developer"},
-        {name : "Doniyor" , job : "Java Backend Developer"},
-        {name : "Aziz" , job : "Node JS Backend Developer"}
+        {name : "Valisher",job : "FullStack Developer",isRes : true},
+        {name : "Doniyor" , job : "Java Backend Developer" ,isRes : false},
+        {name : "Aziz" , job : "Node JS Backend Developer" , isRes : true}
       ],
       todoList : [],
       inputValues : "",
