@@ -59,6 +59,17 @@
            
           </ul>
 
+          <!-- Vue Todo List -->
+          <h2 class = "center--text">Todo List</h2>
+          <form class = "todo--form">
+           <label for="">Todo List</label>
+           <input type="text"  placeholder = "Add Items" v-model="inputValues" > 
+           <button  class = "btn--todo" @click = "addTodoList">Add</button>
+           <ul class = "todo--ul">
+            <li class = "todo--li" v-for = "item in todoList">{{item}}</li>
+           </ul>
+          </form>
+
       </div>
     <script src = "./main.js">
     </script>

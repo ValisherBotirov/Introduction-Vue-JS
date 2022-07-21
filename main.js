@@ -17,7 +17,11 @@ const app = Vue.createApp({
         {name : "Valisher",job : "FullStack Developer"},
         {name : "Doniyor" , job : "Java Backend Developer"},
         {name : "Aziz" , job : "Node JS Backend Developer"}
-      ]
+      ],
+
+      todoList : [],
+
+      inputValues : "",
     }
   },
 
@@ -43,6 +47,18 @@ const app = Vue.createApp({
       console.log(e.offsetX , e.offsetY);
       this.x = e.offsetX,
       this.y = e.offsetY
+    },
+
+    addTodoList(e){
+      e.preventDefault();
+      if(!this.inputValues){
+        alert("Malumot kiritilmadi")
+      }
+      else{
+        this.todoList.push(this.inputValues);
+        console.log(this.todoList);
+        this.inputValues = ""
+      }
     }
 
 
