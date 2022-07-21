@@ -1,0 +1,20 @@
+.center--text{
+  text-align  : center;
+}
+
+.box{
+  margin : 30px;
+  width : 300px;
+  height : 200px;
+  display : flex;
+  background-color : blue;
+  gap : 40px;
+  justify-content : center;
+  align-items : center;
+  color : white;
+  font-size : 20px;
+}
+
+.flex-group{
+  display : flex;
+}

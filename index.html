@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="css/style.css" rel="stylesheet">
       <script src="https://unpkg.com/vue@3"></script>
+      <link rel="stylesheet"  href="./index.css">
     </head>
     <body>
       <div id = "app">
@@ -29,6 +30,24 @@
           <span v-if = toggle>Hide Text</span>
           <span v-if = !toggle>Show Text</span>
         </button>
+
+        <h2 class = "center--text">New Events</h3>
+          <div class = "flex-group">
+            <div class = "box" @mouseover = "mouseEnter">
+              MouseEvent
+            </div>
+            <div class = "box" @mouseleave = "mouseEnter">
+              MouseLeave
+            </div>
+            <div class = "box" @dblclick = "mouseEnter">
+              MouseClick
+            </div>
+            <div class = "box" @mousemove = "mouseMove">
+              Pos ({{x}} {{y}})
+            </div>
+          </div>
+         
+
 
       </div>
     <script src = "./main.js">

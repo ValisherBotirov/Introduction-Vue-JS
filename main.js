@@ -9,8 +9,9 @@ const app = Vue.createApp({
       age : 20,
       email : "valisherbotirov1218@gmail.com",
       text : "This is toggle text",
-      toggle : true
-
+      toggle : true,
+      x : 0,
+      y : 0,
     }
   },
 
@@ -25,8 +26,18 @@ const app = Vue.createApp({
 
     toogleText(){
       this.toggle = !this.toggle
-    }
+    },
 
+    mouseEnter(e){
+      console.log(e);
+      console.log("ishladi");
+    },
+    
+    mouseMove(e){
+      console.log(e.offsetX , e.offsetY);
+      this.x = e.offsetX,
+      this.y = e.offsetY
+    }
 
 
   }
